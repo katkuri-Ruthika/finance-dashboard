@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --background: 220 20% 97%;
+    --foreground: 220 30% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 30% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 30% 10%;
+
+    --primary: 230 72% 56%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 20% 94%;
+    --secondary-foreground: 220 30% 10%;
+
+    --muted: 220 16% 93%;
+    --muted-foreground: 220 10% 46%;
+
+    --accent: 220 20% 94%;
+    --accent-foreground: 220 30% 10%;
+
+    --destructive: 0 72% 56%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 152 60% 42%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --border: 220 16% 90%;
+    --input: 220 16% 90%;
+    --ring: 230 72% 56%;
+
+    --radius: 0.75rem;
+
+    --sidebar-bg: 228 34% 14%;
+    --sidebar-fg: 220 20% 80%;
+    --sidebar-active: 230 72% 56%;
+    --sidebar-active-fg: 0 0% 100%;
+    --sidebar-hover: 228 30% 20%;
+
+    --sidebar-background: 228 34% 14%;
+    --sidebar-foreground: 220 20% 80%;
+    --sidebar-primary: 230 72% 56%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 228 30% 20%;
+    --sidebar-accent-foreground: 220 20% 80%;
+    --sidebar-border: 228 20% 22%;
+    --sidebar-ring: 230 72% 56%;
+
+    --font-heading: 'Space Grotesk', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
+
+    --shadow-card: 0 1px 3px 0 hsl(220 30% 10% / 0.04), 0 1px 2px -1px hsl(220 30% 10% / 0.04);
+    --shadow-card-hover: 0 4px 12px 0 hsl(220 30% 10% / 0.08);
+    --shadow-elevated: 0 10px 30px -8px hsl(230 72% 56% / 0.12);
+
+    --gradient-primary: linear-gradient(135deg, hsl(230 72% 56%), hsl(250 72% 62%));
+    --gradient-success: linear-gradient(135deg, hsl(152 60% 42%), hsl(170 60% 46%));
+    --gradient-expense: linear-gradient(135deg, hsl(0 72% 56%), hsl(20 72% 56%));
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
